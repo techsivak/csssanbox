@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sing-Up</title>
+  <link
+  href="https://fonts.googleapis.com/css?family=Raleway"
+  rel="stylesheet"
+/>
+  <style> 
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background: #344a72;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #container{
+    max-width: 350px;
+    height: 600px;
+    margin: 50px auto;
+    background-color:#fff;
+    padding: 20px;
+    line-height: 30px;
+
+  }
+
+  #mini-header{
+    text-align: center;
+    font-weight:500;
+    line-height: 40px;
+  }
+
+  #mini-header p {
+    font-size: 12;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  label{
+    color: grey;
+    font-weight: 500;
+
+  }
+
+ 
+  .form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  .btn-success{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 5px;
+
+    background-color: rgb(128, 218, 188);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn-success:hover{
+    background-color: rgb(77, 192, 154);
+  }
+
+  #terms-condition{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  footer{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0;
+    color: #ddd;
+  }
+
+  footer a {
+    color:  rgb(77, 192, 154);
+    text-decoration: none;
+    font-weight: 600;
+
+  }
+
+  </style>
+</head>
+<body>
+
+  
+<div id="container">
+  <div id="mini-header">
+    <h1>Sign Up</h1>
+    <p>it's free and only takes a minute</p>
+  </div>
+  <form id="sign-up">
+    <!-- first name -->
+
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" class="form-control" id="firstname"  >
+    </div>
+
+    <!-- Last name -->
+
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" id="lastname"  >
+    </div>
+
+    <!-- Email -->
+
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+
+    <!-- Password -->
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password">
+    </div>
+    
+    <!-- confirm password  -->
+
+    <div class="form-group">
+      <label for="password-confirmation">password-confirmation</label>
+      <input type="password-confirmation" class="form-control" id="password-confirmation" >
+    </div>
+
+    <button type="submit" class="btn btn-success">Sing-Up</button>
+
+    <p id="terms-condition">By clicking the Sing-Up button, you agree to our <br><a href="">Terms & Conditions and Privacy Policy</a></p>
+
+  </form>
+
+  <!-- footer -->
+
+<footer>
+  <h3>Already Have an  Accound? <a href="demo-login-page">Login&nbsp;Here</a></h3>
+</footer>
+</div>
+
+</body>
+</html>
